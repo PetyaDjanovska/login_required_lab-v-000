@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    byebug
     if !params[:name].blank?
       session[:name] = params[:name]
     else
