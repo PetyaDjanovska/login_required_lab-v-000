@@ -1,6 +1,7 @@
 class SecretsController < ApplicationController
 
   def show
+    byebug
     if session.include? :user
       render 'show'
     else
