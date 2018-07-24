@@ -1,8 +1,7 @@
 class SecretsController < ApplicationController
 
   def show
-    byebug
-    if session.include? :user
+    if session.include? :user_name
       render 'show'
     else
       redirect_to sessions_new_path
