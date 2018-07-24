@@ -4,7 +4,7 @@ class SecretsController < ApplicationController
     if session.include? :user
 
     else
-      redirect_to login_path
+      redirect_to sessions_new_path
     end
   end
 end
