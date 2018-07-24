@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  oot 'application#hello'
+  root 'application#hello'
   get 'sessions/new'
   # get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
